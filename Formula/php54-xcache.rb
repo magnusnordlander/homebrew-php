@@ -2,8 +2,8 @@ require File.join(File.dirname(__FILE__), 'abstract-php-extension')
 
 class Php54Xcache < AbstractPhpExtension
   homepage 'http://xcache.lighttpd.net'
-  url 'http://xcache.lighttpd.net/pub/Releases/2.0.0/xcache-2.0.0.tar.bz2'
-  sha1 '8a41d0a7ec92dea96677514a5e74bf15e76c7466'
+  url 'http://xcache.lighttpd.net/pub/Releases/2.0.1/xcache-2.0.1.tar.bz2'
+  sha1 '3d5ca5fee803f047e8b9e61d503f4c40849b0b75'
 
   depends_on 'autoconf' => :build
   depends_on 'php54' if build.include?('with-homebrew-php') && !Formula.factory('php54').installed?
